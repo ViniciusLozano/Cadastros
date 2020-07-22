@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Programais</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+  <p>Programais</p>
+  <div class="pro">
+    <p>Somos umas instituição que ensina programação gratuitamente, aqui voçê aprenderá JavaScript, HTML5 e CSS3</p>
+  </div>
+
+  <img src="../../assets/programção.jpg" alt="programação">
+
+</ion-content>
+
+<ion-footer>
+  <ion-row>
+    <ion-col (click)="login()">Login</ion-col>
+    <ion-col (click)="Cadastrar()">Cadastro</ion-col>
+  </ion-row>
+</ion-footer>

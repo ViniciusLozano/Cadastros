@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger"> 
+
+  <div class="box">
+    <p>Bem vindo ao Programais</p>
+    <p>Entre com seu login ou faça o cadastro</p>
+  </div>
+
+  <img src="../../assets/programção.jpg">
+
+  <div class="dados">
+    <ion-item>
+      <ion-label position="floating">Digite seu Email:</ion-label>
+      <ion-input type="text" id="n1" [(ngModel)]="n1" clearInput></ion-input>
+    </ion-item>
+  
+  <br>
+  
+    <ion-item>
+      <ion-label position="floating">Digite sua senha:</ion-label>
+      <ion-input type="password" id="n2" [(ngModel)]="n2" clearInput></ion-input>
+    </ion-item>
+  
+  <br>
+  
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-row>
+    <ion-col (click)="Voltar()">Voltar</ion-col>
+    <ion-col (click)="login()">Login</ion-col>
+    <ion-col (click)="Cadastrar()">Cadastro</ion-col>
+  </ion-row>
+</ion-footer>
