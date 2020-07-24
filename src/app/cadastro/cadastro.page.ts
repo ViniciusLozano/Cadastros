@@ -1,3 +1,4 @@
+  
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
@@ -7,6 +8,12 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./cadastro.page.scss'],
 })
 export class CadastroPage implements OnInit {
+
+  nome: any = ""
+  sexo: any = ""
+  email: any = ""
+  senha: any = ""
+  senha2: any = ""
 
   constructor(private navcrtl: NavController) { }
 

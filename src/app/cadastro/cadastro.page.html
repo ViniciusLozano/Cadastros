@@ -5,7 +5,44 @@
 </ion-header>
 
 <ion-content color="danger">
+  <div class="dados">
+    <ion-item>
+      <ion-label position="floating">Nome:</ion-label>
+      <ion-input type="text" id="nome" [(ngModel)]="nome" clearInput></ion-input>
+    </ion-item>
+    <br>
 
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select class="custom-options" interface="action-sheet" id="sexo" [(ngModel)]="sexo">
+        <ion-select-option value="m">Masculino</ion-select-option>
+        <ion-select-option value="f">Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+      <ion-label position="floating">E-mail:</ion-label>
+      <ion-input type="email" id="email" [(ngModel)]="email" clearInput></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+      <ion-label position="floating">Senha:</ion-label>
+      <ion-input type="password" id="senha" [(ngModel)]="senha" clearInput></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+      <ion-label position="floating">Confirma Senha:</ion-label>
+      <ion-input type="password" id="senha2" [(ngModel)]="senha" clearInput></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="full" color="primary">Cadastrar!</ion-button>
+  </div>
 </ion-content>
 
 <ion-footer>
